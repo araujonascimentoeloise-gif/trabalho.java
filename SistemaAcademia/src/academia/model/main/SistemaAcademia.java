@@ -47,9 +47,9 @@ public class SistemaAcademia {
 					String idadea = sc.nextLine();
 					
 					System.out.println("CPF:");
-					String cpf  = sc.nextLine();
+					String Cpf  = sc.nextLine();
 					
-					alunos[contaluno] = new aluno (nomea, matriculaa, idadea, cpf);
+					alunos[contaluno] = new aluno (nomea, matriculaa, idadea, Cpf);
 					contaluno++;
 					
 					System.out.println( "Aluno cadastrado com sucesso!");
@@ -72,9 +72,9 @@ public class SistemaAcademia {
 					String idadei = sc.nextLine();
 					
 					System.out.println("CPF:");
-					String cpf  = sc.nextLine();
+					String Cpf  = sc.nextLine();
 					
-					instrutor [continstrutor] = new instrutor (nomei, matriculai, idadei, cpf);
+					instrutor [continstrutor] = new instrutor (nomei,matriculai, idadei, Cpf);
 					continstrutor++;
 					
 					System.out.println( "Instrutor  cadastrado com sucesso!");
@@ -84,8 +84,36 @@ public class SistemaAcademia {
 				break;
 				
 			case 3:
-				
-				
+				System.out.println("/n=== Lista de Alunos===");
+				if (contaluno== 0){
+					System.out.println("Nenhum aluno cadastrado!");
+				}else{
+					for (int i = 0; i < contaluno ; i++){
+						System.out.println("/n Aluno " + (i+1)+"i");
+						alunos [i].exibirInfo();
+						}
+					
+					}
+			case 4:
+					System.out.println("/n===Lista do Instrutor===");
+					if(continstrutor == 0){
+						System.out.println("Nenhum Instrutor Cadastrado!");
+					}else{
+						for(int i=0; i< continstrutor; i++){
+							System.out.println("/nInstrutor"+ (i+1)+"i");
+							instrutor[i].exibirInfo();
+							}
+						}
+			case 0:
+					System.out.println("/n Encerrando o Sistema...");
+					default:System.out.println("Opção Inválida! Tente Novamente.");
+							}										
+						}while(opcao !=0);
+					}
+
+				}
+	
+				 
 				
 				
 				
@@ -95,14 +123,4 @@ public class SistemaAcademia {
 				
 				
 					
-				}
-		
-		
-		
-			
-	}
-	}
-		}
-	}
-
-
+				
