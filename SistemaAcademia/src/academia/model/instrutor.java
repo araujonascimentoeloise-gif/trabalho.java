@@ -3,7 +3,7 @@ package academia.model;
 public class instrutor extends pessoa{
     private  String matricula; 
 
-    public instrutor( String nome, int idade, String matricula, String Cpf){
+    public instrutor( String nome, String  idade, String Cpf, String matricula){
         super(nome, idade ,Cpf);
         this.matricula = matricula;
 
@@ -17,7 +17,7 @@ public class instrutor extends pessoa{
         this.matricula = matricula;
     }
 
-    @Override
+  
     public void exibirInfo() {
         super.exibirInfo();
             System.out.println("instrutor [matricula=" + matricula +"]");

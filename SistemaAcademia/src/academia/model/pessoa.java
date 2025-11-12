@@ -1,13 +1,13 @@
 package academia.model;
 		public class pessoa{
-			private String nome;
-			private String idade;
-			private String cpf;
+			private String nome; 
+			private String  idade;
+			private String Cpf;
 
-		public pessoa (String nome, String idade, String cpf) {
+		public pessoa (String nome, String idade, String Cpf) {
 			this.nome = nome;
 			this.idade = idade;
-			this.cpf = cpf;
+			this.Cpf = Cpf;
 			
 		}
 
@@ -28,15 +28,15 @@ package academia.model;
 		}
 
 		public String getCpf() {
-			return cpf;
+			return Cpf;
 		}
 
-		public void setCpf(String cpf) {
-			this.cpf = cpf;
+		public void setCpf(String Cpf) {
+			this.Cpf = Cpf;
 		}
 
 		public void exibirInfo(){
-			System.out.println("pessoa [nome="+ nome + ", idade="+ idade + "]");
+			System.out.println("pessoa [nome="+ nome + ", idade="+ idade + "Cpf:"+ Cpf+"]");
 			
 		}	
 			
